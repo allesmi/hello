@@ -11,3 +11,8 @@ It consisted mostly of editing the file in `hello.spec` (initially created with 
 Firstly I had to add `BuildRequires:` lines for `gcc`, `make`, and `gettext`. After building `fedpkg` complains about installed but unpackaged files which where then added under the `%files` section in `hello.spec`.
 
 When `fedpkg` completes successfully  I can check for correctness with `rpmlint hello.spec results_hello/2.10/1.fc36/hello-2.10*.{x86_64,src}.rpm`.
+
+## Flatpak
+
+Following the tutorial at [Building your first Flatpak](https://docs.flatpak.org/en/latest/first-build.html).
+It uses a shell script (`hello.sh`) until I know how to run the autoconf toolchain of the GNU hello project with flatpak modules.

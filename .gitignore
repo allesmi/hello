@@ -1,3 +1,9 @@
 hello-2.10.tar.gz
+
+# RPM
 results_hello/
 *.rpm
+
+# flatpak
+.flatpak-builder/
+build-dir/
