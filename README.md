@@ -15,4 +15,5 @@ When `fedpkg` completes successfully  I can check for correctness with `rpmlint 
 ## Flatpak
 
 Following the tutorial at [Building your first Flatpak](https://docs.flatpak.org/en/latest/first-build.html).
-It uses a shell script (`hello.sh`) until I know how to run the autoconf toolchain of the GNU hello project with flatpak modules.
+The manifest contains the URL of the GNU hello tarball, along with its sha256 sum.
+Just setting `buildsystem: autotools` is enough to build and package the program.

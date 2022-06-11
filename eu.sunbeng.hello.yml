@@ -2,12 +2,11 @@ app-id: eu.sunbeng.hello
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
-command: hello.sh
+command: hello
 modules:
   - name: hello
-    buildsystem: simple
-    build-commands:
-      - install -D hello.sh /app/bin/hello.sh
+    buildsystem: autotools
     sources:
-      - type: file
-        path: hello.sh
+      - type: archive
+        url: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
+        sha256: 31e066137a962676e89f69d1b65382de95a7ef7d914b8cb956f41ea72e0f516b
